@@ -101,17 +101,17 @@ var carro = "preto"
 var valor = 30000
 var prestacao = 750
 
-a1(branco, branco)
+a1(branco)
 a2(branco, cinza)
 a3(carro, branco)
 a4(carro)
-a5(valor)
+a5(valor, prestacao)
 a6(branco, preto, cinza)
 
-function a1(branco, branco){
+function a1(branco){
     // a) branco == “branco”
     var element1 = document.getElementById("a1")
-    element1.innerHTML = branco == branco
+    element1.innerHTML = branco == "branco"
 }
 
 function a2(branco, cinza){
@@ -132,13 +132,13 @@ function a4(carro){
     element4.innerHTML = carro == "preto" ? "cinza" : "marron"
 }
 
-function a5(valor){
+function a5(valor, prestacao){
     // e) Quantas prestações são necessárias para pagar o valor do carro com uma entrada
     // de 3.000? Demonstre a operação.
     var element5 = document.getElementById("a5")
 
     var restantePagamento = valor - 3000
-    element5.innerHTML = "retirando a entrada do valor: " + restantePagamento + ", Levanto em conta que cada parcela será igual a entrada, ficamos com o total de: " + restantePagamento/3000 + " de parcelas para pagar"
+    element5.innerHTML = "retirando a entrada do valor: " + restantePagamento + " Agora dividindo pelo valor da parcela, ficamos com o total de: " + restantePagamento/prestacao + " de parcelas para pagar"
 }
 
 function a6(branco, preto, cinza){
