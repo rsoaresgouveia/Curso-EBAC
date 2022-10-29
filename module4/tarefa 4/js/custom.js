@@ -1,6 +1,6 @@
 // instancia jquery e evita conflitos
 // jQuery( function($){
-$(document).ready(function(){
+$(function(){
 
     $('.owl-carousel').owlCarousel();
 
@@ -28,7 +28,7 @@ $(document).ready(function(){
     // $('.featured-item:first h4').fadeOut()
     //  $('.featured-item:first h4').css('color', '#f00')
      
-     $('.featured-item h4').dblclick( function(){
+     $('.featured-item h4').on( function(){
 
         $(this).css({
             'color': '#f00',
