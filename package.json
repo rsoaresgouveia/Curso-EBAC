@@ -1,5 +1,10 @@
 {
   "dependencies": {
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0",
+    "eslint-plugin-react": "^7.32.2"
   }
 }
